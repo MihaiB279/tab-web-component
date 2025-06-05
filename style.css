@@ -1,0 +1,24 @@
+.tab-button {
+  padding: 10px 20px;
+  background: var(--tab-bg,hsl(0, 0.00%, 100.00%));
+  border: none;
+  border-right: 1px solid #ddd;
+  border-bottom: 2px solid transparent; /* keep space reserved */
+  transition: background-color 0.3s ease, color 0.3s ease, border-bottom-color 0.3s ease, box-shadow 0.3s ease;
+  flex: 1;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5em;
+}
+
+.tab-button.active {
+  background: var(--active-bg, #fff);
+  font-weight: bold;
+  border-bottom-color: var(--active-color, #007BFF); /* only change color */
+  color: var(--active-color, #007BFF);
+  box-shadow: 0 0 8px var(--active-color, #007BFF);
+  transform: none;
+}
+
